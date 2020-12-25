@@ -22,6 +22,10 @@ header{
     font-size: 36px;
     font-weight: 500;
 }
+.logoLink{
+    color: #dddddd;
+    text-decoration: none;
+}
 .navbar{
     display: flex;
     text-align: center;
@@ -37,13 +41,72 @@ header{
     color: #ffffff;
     text-decoration: none;
 }
+.nav-link:hover{
+    text-decoration: underline;
+}
 .home{
     background: url(images/gallos-gym.jpg) no-repeat center center;
-    height: 100vh;
+    height: 90vh;
+    font-family: 'Lato', sans-serif;
 }
 .home-overlay{
-    display: block;
+    /* display: block; */
+    display: flex;
     height: 100%;
     width: 100%;
     background-color: rgba(00, 00, 00, .8);
+    justify-content: center;
+    align-items: center;
+}
+.home-info{
+    flex: 2;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: translateY(-10%);
+}
+.home-title, .home-description{
+    width: 35%;
+    text-align: center;
+}
+.home-title{
+    font-size: 38px;
+    width: 70%;
+    color: #dddddd;
+    margin-bottom: 15px;
+}
+.home-description{
+    width: 55%;
+    color: #aaaaaa;
+    font-size: 24px;
+}
+.contactUsBtn{
+    background-color: #ff0000;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 32px;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 5vh;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+}
+.contactUsBtn:hover{
+    background-color: #ff4444;
+}
+.home-card-section{
+    flex: 1;
+}
+.logoCard{
+    margin: auto;
+    transform: translateY(-15%);
+}
+
+
+.locationHoursPhone{
+    background-color: #0E0F15;
+    height: 15vh;
 }
