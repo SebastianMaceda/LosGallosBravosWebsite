@@ -66,7 +66,7 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    transform: translateY(-10%);
+    /* transform: translateY(-10%); */
 }
 .home-title, .home-description{
     width: 35%;
@@ -102,7 +102,7 @@ header{
 }
 .logoCard{
     margin: auto;
-    transform: translateY(-15%);
+    /* transform: translateY(-15%); */
 }
 
 
@@ -157,7 +157,47 @@ header{
     line-height: 7.5vh;
 
 }
-.aboutUs{
-    height: 70vh;
-    background-color: #f9f9f9;
+.gallerySection{
+    min-height: 110vh;
+    background-color: #0b0b0e;
+    max-width: 100%;
+}
+.galleryTitle{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    color: #EEEEEE;
+    font-size: 42px;
+    text-decoration: underline;
+    text-decoration-color: #8D8D8D;
+    padding: 25px 0;
+}
+.topGallery, .bottomGallery{
+    display: flex;
+    max-width: 70%;
+    /* max-height: 250px; */
+    margin: auto;
+    overflow: hidden;
+    justify-content: center;
+    /* align-items: center; */
+    /* max-width: 70%; */
+}
+.imageGallery{
+    max-height: 400px;
+}
+.img1{
+    flex: 2;
+}
+.img2{
+    flex: 1;
+}
+
+
+.img3{
+    flex: 1;
+}
+.img4{
+    flex: 1;
+}
+.img5{
+    flex: 1;
 }
