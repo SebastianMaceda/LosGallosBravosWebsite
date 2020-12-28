@@ -306,10 +306,16 @@ header{
     flex: 1;
     margin: auto;
 }
-.footerLocation{
+.footerLine{
+    width: 5%;
+    transform: translateX(300%);
+    margin: 20px 0;
+}
+.footerLocation, .footerPhone{
+    margin: 15px 0;
     width: 45%;
 }
-.locationText{
+.locationText, .phoneText, .socialMediaText{
     float: left;
     padding-right: 10px;
     color: #bbbbbb;
@@ -318,7 +324,7 @@ header{
     line-height: 32px;
     vertical-align: middle;
 }
-.locationDesc{
+.locationDesc, .phoneDesc{
     color: #eeeeee;
     font-size: 20px;
     font-weight: 500;
@@ -335,4 +341,24 @@ header{
     text-align: center;
     font-weight: 900;
     color: #dddddd;
+}
+.fa-facebook-square{
+    color: #3B5998;
+    line-height: 32px;
+    vertical-align: middle;
+    font-size: 24px;
+}
+.copyrightSection{
+    height: 7.5vh;
+    display: grid;
+    background-color: #0A0B11;
+}
+.losGallosBravosCopyright{
+    display: block;
+    margin: auto;
+    color: rgba(255, 255, 255, .6);
+    font-size: 16px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    text-align: center;
 }
