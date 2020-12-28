@@ -267,7 +267,7 @@ header{
 }
 
 .footerSection{
-    min-height: 30vh;
+    min-height: 35vh;
     display: flex;
     background-color: #0E0F15;
     font-family: 'Oswald', sans-serif;
@@ -282,11 +282,23 @@ header{
 }
 .footerTable .dateDays{
     color: #dddddd;
+    /* border-right: 1px solid red; */
+    text-align: left;
+    width: 50%;
+}
+.footerTable .dateHours{
+    color: #aaaaaa;
+    /* border-left: 1px solid red; */
+    text-align: right;
+    width: 50%;
 }
 .hours{
     color: #ffffff;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: 500;
+    letter-spacing: 3px;
+    text-decoration: underline;
+    margin-bottom: 10px;
 }
 .footerTable{
     margin: auto;
@@ -307,16 +319,19 @@ header{
     margin: auto;
 }
 .footerLine{
-    width: 5%;
-    transform: translateX(300%);
-    margin: 20px 0;
+    width: 10%;
+    /* transform: translateX(300%); */
+    margin: 10px 0;
+    /* margin: auto; */
 }
-.footerLocation, .footerPhone{
+.footerLocation, .footerPhone, .footerSocialMedia{
     margin: 15px 0;
-    width: 45%;
+    display: flex;
+    flex-direction: column;
+   /* width: 30%; */
 }
 .locationText, .phoneText, .socialMediaText{
-    float: left;
+    /* float: left; */
     padding-right: 10px;
     color: #bbbbbb;
     font-size: 16px;
@@ -332,15 +347,6 @@ header{
     vertical-align: middle;
     margin: 0;
     padding: 0;
-}
-.locationCity{
-    margin: 0;
-    padding: 0;
-    line-height: 32px;
-    vertical-align: middle;
-    text-align: center;
-    font-weight: 900;
-    color: #dddddd;
 }
 .fa-facebook-square{
     color: #3B5998;
