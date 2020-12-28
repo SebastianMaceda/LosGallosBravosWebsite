@@ -145,9 +145,6 @@ header{
 .hours-section{
     margin: auto;
 }
-.hours{
-    text-align: center;
-}
 .hours-section table{
     text-align: center;
     margin: auto;
@@ -267,4 +264,75 @@ header{
     margin: auto;
     text-align: center;
 
+}
+
+.footerSection{
+    min-height: 30vh;
+    display: flex;
+    background-color: #0E0F15;
+    font-family: 'Oswald', sans-serif;
+}
+.footerHours{
+    flex: 1;
+    margin: auto;
+    text-align: center;
+}
+.footerTable td {
+    padding: 5px 30px;
+}
+.footerTable .dateDays{
+    color: #dddddd;
+}
+.hours{
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+}
+.footerTable{
+    margin: auto;
+    font-size: 18px;
+}
+.footerLogo{
+    flex: 1;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+#footerLogoCard{
+    max-height: 240px;
+    margin: auto;
+}
+.footerInfo{
+    flex: 1;
+    margin: auto;
+}
+.footerLocation{
+    width: 45%;
+}
+.locationText{
+    float: left;
+    padding-right: 10px;
+    color: #bbbbbb;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    vertical-align: middle;
+}
+.locationDesc{
+    color: #eeeeee;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
+.locationCity{
+    margin: 0;
+    padding: 0;
+    line-height: 32px;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: 900;
+    color: #dddddd;
 }
