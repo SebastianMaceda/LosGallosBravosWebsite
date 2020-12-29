@@ -56,6 +56,11 @@ header{
     background-color: pink;
     padding: 100px;
 }
+@media screen and (min-width: 780px){
+    .home{
+        background: url(images/gallos-gym.jpg) no-repeat center center;
+    }
+}
 @media screen and (max-width: 1000px){
     .logo{
         font-size: 30px;
@@ -71,12 +76,14 @@ header{
         grid-template-areas: 
         'a a b'
         'c c c';
+        padding: 0;
     }
     .logo{
         font-size: 26px;
         text-align: left;
         width: 100%;
         grid-area: a;
+        padding-left: 25px;
     }
     .nav-list{
         font-size: 20px;
@@ -91,15 +98,27 @@ header{
         flex: 10;
         grid-area: b;
         text-align: right;
+        padding-right: 25px;
+    }
+    .icon{
+        text-align: right;
     }
     #btn:checked + .navbar{
         display: flex;
         flex-direction: column;
         /* flex: 1; */
         /* margin: auto; */
-        background-color: yellow;
+        background-color: rgba(22, 22, 22, .95);
         border-bottom: 2px solid black;
         box-shadow: 10px 15px 10px rgba(0, 0, 0, .7);
+    }
+    .home-card-section{
+        display: none;
+    }
+    .home{
+        /* background:rgba(0, 0, 0, .7); */
+        background: url(images/logoCard.png) no-repeat center center;
+        background-size: cover;
     }
 }
 @media screen and (max-width: 425px){
@@ -109,7 +128,7 @@ header{
 
 
 .home{
-    background: url(images/gallos-gym.jpg) no-repeat center center;
+    /* background: url(images/gallos-gym.jpg) no-repeat center center; */
     height: 95vh;
     font-family: 'Lato', sans-serif;
 }
@@ -271,16 +290,7 @@ header{
 .img1{
     flex: 2;
 }
-.img2{
-    flex: 1;
-}
-.img3{
-    flex: 1;
-}
-.img4{
-    flex: 1;
-}
-.img5{
+.img2, .img3, .img4, .img5{
     flex: 1;
 }
 .aboutCoach{
