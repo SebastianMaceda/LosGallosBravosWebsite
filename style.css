@@ -3,18 +3,6 @@
     margin: 0;
     padding: 0;
 }
-
-/* All break points in responiveness of site below 
-@media screen and (max-width: 1000px){
-
-}
-@media screen and (max-width: 780px){
-
-}
-@media screen and (max-width: 425px){
-
-}
-*/
 header{
     background-color: #161616;
     width: 100%;
@@ -56,6 +44,45 @@ header{
 .nav-link:hover{
     text-decoration: underline;
 }
+.hamburgerMenu{
+    display: none;
+    text-align: right;
+    margin: auto;
+    font-size: 32px;
+    flex: 1;
+}
+@media screen and (max-width: 1000px){
+    .logo{
+        font-size: 30px;
+    }
+    .nav-list{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 780px){
+    .logo{
+        font-size: 26px;
+        text-align: center;
+    }
+    .nav-list{
+        font-size: 20px;
+    }
+    .navbar{
+        display: none;
+        position: relative;
+        top: 7.5vh;
+    }
+    .hamburgerMenu{
+        display: block;
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 425px){
+
+}
+
+
+
 .home{
     background: url(images/gallos-gym.jpg) no-repeat center center;
     height: 95vh;
