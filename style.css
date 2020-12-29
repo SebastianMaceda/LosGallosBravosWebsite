@@ -44,15 +44,17 @@ header{
 .nav-link:hover{
     text-decoration: underline;
 }
-.hamburgerMenu, #btn{
+.hamburgerMenu{
     display: none;
     text-align: right;
     margin: auto;
     font-size: 32px;
     flex: 2;
 }
-#btnBox{
+#btn{
     display: none;
+    background-color: pink;
+    padding: 100px;
 }
 @media screen and (max-width: 1000px){
     .logo{
@@ -63,27 +65,38 @@ header{
     }
 }
 @media screen and (max-width: 780px){
+    header{
+        display: grid;
+        /* grid-template-columns: auto auto; */
+        grid-template-areas: 
+        'a a b'
+        'c c c';
+    }
     .logo{
         font-size: 26px;
-        text-align: center;
-    }
-    header{
-        flex-wrap: wrap;
+        text-align: left;
+        width: 100%;
+        grid-area: a;
     }
     .nav-list{
         font-size: 20px;
     }
     .navbar{
         display: none;
-        position: relative;
-        top: 7.5vh;
+        grid-area: c;
     }
-    .hamburgerMenu, #btn{
+    .hamburgerMenu{
         display: block;
         padding: 10px;
+        flex: 10;
+        grid-area: b;
+        text-align: right;
     }
-    [id^=btnBox]:checked + .navbar{
-        display: block;
+    #btn:checked + .navbar{
+        display: flex;
+        flex-direction: column;
+        /* flex: 1; */
+        /* margin: auto; */
         background-color: yellow;
         border-bottom: 2px solid black;
         box-shadow: 10px 15px 10px rgba(0, 0, 0, .7);
