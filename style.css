@@ -44,12 +44,15 @@ header{
 .nav-link:hover{
     text-decoration: underline;
 }
-.hamburgerMenu{
+.hamburgerMenu, #btn{
     display: none;
     text-align: right;
     margin: auto;
     font-size: 32px;
-    flex: 1;
+    flex: 2;
+}
+#btnBox{
+    display: none;
 }
 @media screen and (max-width: 1000px){
     .logo{
@@ -64,6 +67,9 @@ header{
         font-size: 26px;
         text-align: center;
     }
+    header{
+        flex-wrap: wrap;
+    }
     .nav-list{
         font-size: 20px;
     }
@@ -72,9 +78,15 @@ header{
         position: relative;
         top: 7.5vh;
     }
-    .hamburgerMenu{
+    .hamburgerMenu, #btn{
         display: block;
         padding: 10px;
+    }
+    [id^=btnBox]:checked + .navbar{
+        display: block;
+        background-color: yellow;
+        border-bottom: 2px solid black;
+        box-shadow: 10px 15px 10px rgba(0, 0, 0, .7);
     }
 }
 @media screen and (max-width: 425px){
