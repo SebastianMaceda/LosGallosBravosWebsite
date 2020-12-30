@@ -269,6 +269,9 @@ header{
 
 }
 @media screen and (max-width: 1250px){
+    .location{
+        width: 100%;
+    }
     .hours-section table{
         font-size: 16px;
 
@@ -278,10 +281,35 @@ header{
     }
 }
 @media screen and (max-width: 1000px){
-
+    .hours-section{
+        flex: 2;
+    }
+    .location, .hours-section table td, .phoneNumber{
+        font-size: 20px;
+    }
+    .location{
+        padding-right: 15px;
+        /* padding: 0 10px; */
+    }
 }
 @media screen and (max-width: 780px){
-
+    .locationHoursPhone{
+        flex-direction: column;
+        min-height: 25vh;
+    }
+    .location, .hours-section{
+        border: none;
+        border-bottom: 1px solid;
+    }
+    .location{
+        padding: 15px;
+    }
+    .phoneNumber{
+        border: none;
+    }
+    .hours-section{
+        width: 100%;
+    }
 }
 @media screen and (max-width: 425px){
 
