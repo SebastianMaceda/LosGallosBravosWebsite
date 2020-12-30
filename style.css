@@ -311,8 +311,17 @@ header{
         width: 100%;
     }
 }
-@media screen and (max-width: 425px){
-
+@media screen and (max-width: 465px){
+    .locationHoursPhone{
+        min-height: 30vh;
+    }
+    .location{
+        border-bottom: none;
+        margin-bottom: 10px;
+    }
+    .hours-section{
+        border-top: 1px solid white;
+    }
 }
 
 
@@ -324,6 +333,7 @@ header{
     font-family: 'Oswald', sans-serif;
     background-color: #E5E5E5;
     text-align: center;
+    margin: auto;
 }
 .aboutUsTitle{
     color: #1d1b1b;
@@ -337,8 +347,9 @@ header{
 .aboutUsText{
     color: #2B2B2B;
     font-size: 18px;
-    width: 30%;
+    width: 50%;
     margin: auto;
+    padding-bottom: 75px;
 }
 .gallerySection{
     min-height: 110vh;
@@ -491,6 +502,9 @@ header{
     vertical-align: middle;
     margin: 0;
     padding: 0;
+}
+.footerSocialMedia{
+    text-decoration: none;
 }
 .fa-facebook-square{
     color: #3B5998;
