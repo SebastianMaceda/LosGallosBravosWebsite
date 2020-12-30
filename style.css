@@ -51,6 +51,11 @@ header{
     font-size: 32px;
     flex: 2;
 }
+.hamburgerMenu::before{
+    display: none;
+    margin: auto;
+    text-align: center;
+}
 #btn{
     display: none;
     background-color: pink;
@@ -91,9 +96,11 @@ header{
     .navbar{
         display: none;
         grid-area: c;
+        margin-top: -10px;
     }
-    .hamburgerMenu{
+    .hamburgerMenu::before, .hamburgerMenu{
         display: block;
+        position: relative;
         padding: 10px;
         flex: 10;
         grid-area: b;
@@ -120,9 +127,6 @@ header{
         background: url(images/logoCard.png) no-repeat center center;
         background-size: cover;
     }
-}
-@media screen and (max-width: 425px){
-
 }
 
 
@@ -157,12 +161,12 @@ header{
 }
 .home-title{
     font-size: 38px;
-    width: 70%;
+    width: 75%;
     color: #dddddd;
     margin-bottom: 15px;
 }
 .home-description{
-    width: 55%;
+    width: 65%;
     color: #aaaaaa;
     font-size: 24px;
 }
@@ -173,7 +177,7 @@ header{
     font-size: 32px;
     padding: 10px;
     text-decoration: none;
-    margin-top: 5vh;
+    margin-top: 50px;
     border-radius: 15px;
     border: 1px solid #ffffff;
 }
@@ -185,8 +189,35 @@ header{
 }
 .logoCard{
     margin: auto;
+    max-height: 420px;
     /* transform: translateY(-15%); */
 }
+@media screen and (max-width: 1100px){
+    .home-info{
+        flex: 2;
+    }
+    .home-title{
+        width: 100%;
+    }
+    .home-description{
+        width: 95%;
+    }
+
+    .logoCard{
+        max-height: 320px;
+    }
+}
+@media screen and (max-width: 780px){
+
+}
+@media screen and (max-width: 425px){
+
+}
+
+
+
+
+
 
 
 .locationHoursPhone{
@@ -237,6 +268,29 @@ header{
     line-height: 7.5vh;
 
 }
+@media screen and (max-width: 1250px){
+    .hours-section table{
+        font-size: 16px;
+
+    }
+    .hours-section table td{
+        padding: 5px 5px;
+    }
+}
+@media screen and (max-width: 1000px){
+
+}
+@media screen and (max-width: 780px){
+
+}
+@media screen and (max-width: 425px){
+
+}
+
+
+
+
+
 .aboutUs{
     min-height: 40vh;
     font-family: 'Oswald', sans-serif;
