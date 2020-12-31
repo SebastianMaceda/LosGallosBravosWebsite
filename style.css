@@ -77,7 +77,6 @@ header{
 @media screen and (max-width: 780px){
     header{
         display: grid;
-        /* grid-template-columns: auto auto; */
         grid-template-areas: 
         'a a b'
         'c c c';
@@ -113,8 +112,6 @@ header{
     #btn:checked + .navbar{
         display: flex;
         flex-direction: column;
-        /* flex: 1; */
-        /* margin: auto; */
         background-color: rgba(22, 22, 22, .95);
         border-bottom: 2px solid black;
         box-shadow: 10px 15px 10px rgba(0, 0, 0, .7);
@@ -123,7 +120,6 @@ header{
         display: none;
     }
     .home{
-        /* background:rgba(0, 0, 0, .7); */
         background: url(images/logoCard.png) no-repeat center center;
         background-size: cover;
     }
@@ -132,12 +128,10 @@ header{
 
 
 .home{
-    /* background: url(images/gallos-gym.jpg) no-repeat center center; */
     height: 95vh;
     font-family: 'Lato', sans-serif;
 }
 .home-overlay{
-    /* display: block; */
     display: flex;
     height: 100%;
     width: 100%;
@@ -153,7 +147,6 @@ header{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    /* transform: translateY(-10%); */
 }
 .home-title, .home-description{
     width: 35%;
@@ -190,7 +183,6 @@ header{
 .logoCard{
     margin: auto;
     max-height: 420px;
-    /* transform: translateY(-15%); */
 }
 @media screen and (max-width: 1100px){
     .home-info{
@@ -289,7 +281,6 @@ header{
     }
     .location{
         padding-right: 15px;
-        /* padding: 0 10px; */
     }
 }
 @media screen and (max-width: 780px){
@@ -368,16 +359,12 @@ header{
 .topGallery, .bottomGallery{
     display: flex;
     max-width: 70%;
-    /* max-height: 250px; */
     margin: auto;
     overflow: hidden;
     justify-content: center;
-    /* align-items: center; */
-    /* max-width: 70%; */
 }
 .imageGallery{
     max-height: 400px;
-    /* opacity: 80%; */
     overflow: hidden;
 }
 .img1{
@@ -393,7 +380,6 @@ header{
     background-color: #e5e5e5;
 }
 .coachJimmyImg{
-    /* max-height: 300px; */
     max-width: 300px;
     flex: 1;
 }
@@ -437,13 +423,11 @@ header{
 }
 .footerTable .dateDays{
     color: #dddddd;
-    /* border-right: 1px solid red; */
     text-align: left;
     width: 50%;
 }
 .footerTable .dateHours{
     color: #aaaaaa;
-    /* border-left: 1px solid red; */
     text-align: right;
     width: 50%;
 }
@@ -475,18 +459,14 @@ header{
 }
 .footerLine{
     width: 10%;
-    /* transform: translateX(300%); */
     margin: 10px 0;
-    /* margin: auto; */
 }
 .footerLocation, .footerPhone, .footerSocialMedia{
     margin: 15px 0;
     display: flex;
     flex-direction: column;
-   /* width: 30%; */
 }
 .locationText, .phoneText, .socialMediaText{
-    /* float: left; */
     padding-right: 10px;
     color: #bbbbbb;
     font-size: 16px;
