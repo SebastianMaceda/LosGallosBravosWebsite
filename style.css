@@ -109,6 +109,9 @@ header{
     .icon{
         text-align: right;
     }
+    .icon{
+        text-align: right;
+    }
     #btn:checked + .navbar{
         display: flex;
         flex-direction: column;
