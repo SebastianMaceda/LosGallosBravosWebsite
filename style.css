@@ -10,6 +10,7 @@ header{
     display: flex;
     padding: 0 25px;
     position: fixed;
+    z-index: 9999;
 }
 .logo, .navbar{
     line-height: 7.5vh;
@@ -30,6 +31,7 @@ header{
     display: flex;
     text-align: center;
     flex: 1;
+    z-index: 10;
 }
 .nav-list{
     flex: 1;
@@ -105,9 +107,6 @@ header{
         grid-area: b;
         text-align: right;
         padding-right: 25px;
-    }
-    .icon{
-        text-align: right;
     }
     .icon{
         text-align: right;
@@ -230,17 +229,20 @@ header{
     flex: 1;
 }
 .location, .phoneNumber{
-    height: 7.5vh;
+    line-height: 7.5vh;
+    vertical-align: middle;
 }
 .location{
     width: 20%;
     margin: auto;
     font-weight: 500;
-    border-right: 1px solid white;
 
 }
 .hours-section{
     margin: auto;
+    height: 10vh;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
 }
 .hours-section table{
     text-align: center;
@@ -259,13 +261,15 @@ header{
 .phoneNumber{
     margin: auto;
     font-weight: 500;
-    border-left: 1px solid white;
     line-height: 7.5vh;
-
+    padding-left: 5px;
+    min-width: 125px;
 }
 @media screen and (max-width: 1250px){
     .location{
         width: 100%;
+        position: relative;
+        transform:translateY(-50%);
     }
     .hours-section table{
         font-size: 16px;
@@ -274,6 +278,10 @@ header{
     .hours-section table td{
         padding: 5px 5px;
     }
+    .location, .phoneNumber{
+        height: 7.5vh;
+    }
+
 }
 @media screen and (max-width: 1000px){
     .hours-section{
@@ -284,19 +292,29 @@ header{
     }
     .location{
         padding-right: 15px;
+        line-height: auto;
+        vertical-align: top;
+        min-width: 200px;
+        position: relative;
+        transform:translateY(-50%);
     }
 }
 @media screen and (max-width: 780px){
     .locationHoursPhone{
         flex-direction: column;
-        min-height: 25vh;
+        min-height: 30vh;
+    }
+    .hours-section{
+        border: none;
     }
     .location, .hours-section{
-        border: none;
         border-bottom: 1px solid;
     }
     .location{
         padding: 15px;
+        height: 10vh;
+        transform: translateY(-5%);
+        line-height: 30px;
     }
     .phoneNumber{
         border: none;
@@ -345,10 +363,16 @@ header{
     margin: auto;
     padding-bottom: 75px;
 }
+
+/* * Doesn't need media queries */
+
+
+
 .gallerySection{
     min-height: 110vh;
     background-color: #0b0b0e;
     max-width: 100%;
+    padding-bottom: 100px;
 }
 .galleryTitle{
     text-align: center;
@@ -369,6 +393,9 @@ header{
 .imageGallery{
     max-height: 400px;
     overflow: hidden;
+    object-fit: cover;
+    z-index: 5;
+
 }
 .img1{
     flex: 2;
@@ -376,11 +403,51 @@ header{
 .img2, .img3, .img4, .img5{
     flex: 1;
 }
+@media screen and (max-width: 1050px){
+    .imageGallery{
+        max-height: 300px;
+    }
+}
+@media screen and (max-width: 780px){
+    .gallerySection{
+        min-height: 70vh;
+    }
+    .imageGallery{
+        max-height: 200px;
+    }
+}
+@media screen and (max-width: 600px){
+    .topGallery, .bottomGallery{
+        flex-direction: column;
+        /* object-fit: cover; */
+    }
+    .imageGallery{
+        object-fit: cover;
+        position: relative;
+        max-height: 300px;
+        /* object-position: top; */
+        /* object-position: 50% 75%; */
+
+    }
+    .img2{
+        object-position: 50% 25%;
+    }
+    .img4{
+        object-position: 50% 40%;
+    }
+}
+@media screen and (max-width: 600px){
+    .imageGallery{
+        max-height: 250px;
+    }
+}
+
 .aboutCoach{
     display: flex;
     flex-direction: row;
-    padding: 2.5% 25%;
+    padding: 5% 15%;
     background-color: #e5e5e5;
+    min-height: 50vh;
 }
 .coachJimmyImg{
     max-width: 300px;
@@ -404,7 +471,7 @@ header{
 .coachJimmyText{
     font-size: 18px;
     color: #2b2b2b;
-    width: 70%;
+    width: 65%;
     margin: auto;
     text-align: center;
 
