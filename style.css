@@ -126,7 +126,19 @@ header{
         background-size: cover;
     }
 }
-
+@media screen and (max-width: 450px){
+    .logoLink{
+        font-size: 24px;
+    }
+    .hamburgerMenu{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 410px){
+    .logoLink{
+        font-size: 20px;
+    }
+}
 
 
 .home{
@@ -419,14 +431,11 @@ header{
 @media screen and (max-width: 600px){
     .topGallery, .bottomGallery{
         flex-direction: column;
-        /* object-fit: cover; */
     }
     .imageGallery{
         object-fit: cover;
         position: relative;
         max-height: 300px;
-        /* object-position: top; */
-        /* object-position: 50% 75%; */
 
     }
     .img2{
@@ -436,11 +445,7 @@ header{
         object-position: 50% 40%;
     }
 }
-@media screen and (max-width: 600px){
-    .imageGallery{
-        max-height: 250px;
-    }
-}
+
 
 .aboutCoach{
     display: flex;
@@ -452,6 +457,8 @@ header{
 .coachJimmyImg{
     max-width: 300px;
     flex: 1;
+    object-fit: cover;
+
 }
 .coachBio{
     flex: 3;
@@ -476,6 +483,32 @@ header{
     text-align: center;
 
 }
+@media screen and (max-width: 1000px){
+    .coachJimmyImg{
+        max-height: 300px;
+    }
+    .coachJimmyText{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 780px){
+    .coachJimmyText{
+        margin-top: 10px;
+    }
+}
+@media screen and (max-width: 650px){
+    .coachJimmyImg{
+        margin: auto;
+        max-height: 250px;
+        /* width: 250px; */
+    }
+    .aboutCoach{
+        flex-direction: column;
+    }
+    .coachBio{
+        margin-top: 50px;
+    }
+}
 
 .footerSection{
     min-height: 35vh;
@@ -490,6 +523,7 @@ header{
 }
 .footerTable td {
     padding: 5px 30px;
+    min-width: 100px;
 }
 .footerTable .dateDays{
     color: #dddddd;
@@ -512,6 +546,12 @@ header{
 .footerTable{
     margin: auto;
     font-size: 18px;
+}
+.mobileLine{
+    display: none;
+}
+.footerTable2{
+    display: none;
 }
 .footerLogo{
     flex: 1;
@@ -562,6 +602,109 @@ header{
     vertical-align: middle;
     font-size: 24px;
 }
+@media screen and (max-width: 1000px){
+    .footerInfo{
+        padding: 0 20px;
+    }
+    .footerHours .dateHours{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 855px){
+    .footerHours, .footerInfo{
+        flex: 2;
+    }
+    #footerLogoCard{
+        max-width: 200px;
+        margin: auto;
+    }
+    .footerTable{
+        display: none;
+    }
+    .footerTable2{
+        display: block;
+        font-size: 18px;
+    }
+
+    .footerTable2 td {
+        padding: 5px 30px;
+    }
+    .footerTable2 .dateDays{
+        color: #dddddd;
+        text-align: left;
+        min-width: 150px;
+
+        /* width: 50%; */
+    }
+    .footerTable2 .dateHours{
+        color: #aaaaaa;
+        text-align: right;
+        padding: 5px 10px;
+        min-width: 100px;
+        /* width: 50%; */
+    }
+    .locationDesc, .phoneDesc{
+        font-size: 16px;
+    }
+    .locationText, .phoneText, .socialMediaText{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 700px){
+    .footerLogo{
+        display: none;
+    }
+    .locationDesc, .phoneDesc{
+        font-size: 18px;
+    }
+    .locationText, .phoneText, .socialMediaText{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 550px){
+    .footerSection{
+        flex-direction: column;
+
+    }
+    .footerHours{
+        display: block;
+        min-width: 70%;
+    }
+    .mobileLine{
+        display: block;
+        width: 10%;
+        margin: 10px 0;
+    }
+    .footerTable2{
+        padding: 0 20px;
+    }
+    .hours, .mobileLine{
+        margin: 0 20px;
+    }
+    .footerTable2 td {
+        padding: 0;
+        width: 100%;
+        text-align: left;
+    }
+    .hours{
+        color: #bbbbbb;
+        font-size: 16px;
+        padding: 0;
+        text-decoration: none;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    .hours::after{
+        content: ':';
+    }
+    .footerTable2 .dateDays{
+        padding: 0;
+        margin: 0;
+    }
+}
+
+
+
 .copyrightSection{
     height: 7.5vh;
     display: grid;
