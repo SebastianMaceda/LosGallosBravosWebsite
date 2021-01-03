@@ -3,3 +3,40 @@
     margin: 0;
     padding: 0;
 }
+.aboutHero{
+    background: url(images/boxing-gym-ring.jpg) no-repeat center center;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+}
+.aboutHeroOverlay{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, .8);
+}
+.aboutInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.aboutTitle{
+    font-size: 38px;
+    color: #dddddd;
+    text-decoration: underline #aaaaaa;
+    font-family: 'Lato', sans-serif;
+}
+.aboutDescription{
+    font-size: 24px;
+    color: #aaaaaa;
+}
+
+
+@media screen and (max-width: 360px){
+    body{
+        padding-bottom: 100px;
+    }
+}
