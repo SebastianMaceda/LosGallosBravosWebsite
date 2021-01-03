@@ -3,143 +3,6 @@
     margin: 0;
     padding: 0;
 }
-header{
-    background-color: #161616;
-    width: 100%;
-    height: 7.5vh;
-    display: flex;
-    padding: 0 25px;
-    position: fixed;
-    z-index: 9999;
-}
-.logo, .navbar{
-    line-height: 7.5vh;
-}
-.logo{
-    flex: 1;
-    color: #dddddd;
-    vertical-align: middle;
-    font-family: 'Galada', cursive;
-    font-size: 36px;
-    font-weight: 500;
-}
-.logoLink{
-    color: #dddddd;
-    text-decoration: none;
-}
-.navbar{
-    display: flex;
-    text-align: center;
-    flex: 1;
-    z-index: 10;
-}
-.nav-list{
-    flex: 1;
-    font-family: 'Lato', sans-serif;
-    font-size: 24px;
-    list-style: none;
-}
-.nav-link{
-    color: #ffffff;
-    text-decoration: none;
-}
-.nav-link:hover{
-    text-decoration: underline;
-}
-.hamburgerMenu{
-    display: none;
-    text-align: right;
-    margin: auto;
-    font-size: 32px;
-    flex: 2;
-}
-.hamburgerMenu::before{
-    display: none;
-    margin: auto;
-    text-align: center;
-}
-#btn{
-    display: none;
-    background-color: pink;
-    padding: 100px;
-}
-@media screen and (min-width: 780px){
-    .home{
-        background: url(images/gallos-gym.jpg) no-repeat center center;
-    }
-}
-@media screen and (max-width: 1000px){
-    .logo{
-        font-size: 30px;
-    }
-    .nav-list{
-        font-size: 20px;
-    }
-}
-@media screen and (max-width: 780px){
-    header{
-        display: grid;
-        grid-template-areas: 
-        'a a b'
-        'c c c';
-        padding: 0;
-    }
-    .logo{
-        font-size: 26px;
-        text-align: left;
-        width: 100%;
-        grid-area: a;
-        padding-left: 25px;
-    }
-    .nav-list{
-        font-size: 20px;
-    }
-    .navbar{
-        display: none;
-        grid-area: c;
-        margin-top: -10px;
-    }
-    .hamburgerMenu::before, .hamburgerMenu{
-        display: block;
-        position: relative;
-        padding: 10px;
-        flex: 10;
-        grid-area: b;
-        text-align: right;
-        padding-right: 25px;
-    }
-    .icon{
-        text-align: right;
-    }
-    #btn:checked + .navbar{
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(22, 22, 22, .95);
-        border-bottom: 2px solid black;
-        box-shadow: 10px 15px 10px rgba(0, 0, 0, .7);
-    }
-    .home-card-section{
-        display: none;
-    }
-    .home{
-        background: url(images/logoCard.png) no-repeat center center;
-        background-size: cover;
-    }
-}
-@media screen and (max-width: 450px){
-    .logoLink{
-        font-size: 24px;
-    }
-    .hamburgerMenu{
-        font-size: 24px;
-    }
-}
-@media screen and (max-width: 410px){
-    .logoLink{
-        font-size: 20px;
-    }
-}
-
 
 .home{
     height: 95vh;
@@ -198,6 +61,11 @@ header{
     margin: auto;
     max-height: 420px;
 }
+@media screen and (min-height: 1100px){
+    .home{
+        max-height: 70vh;
+    }
+}
 @media screen and (max-width: 1100px){
     .home-info{
         flex: 2;
@@ -213,7 +81,21 @@ header{
         max-height: 320px;
     }
 }
+@media screen and (min-width: 780px){
+    .home{
+        background: url(images/gallos-gym.jpg) no-repeat center center;
+    }
+}
+@media screen and (max-width: 780px){
 
+    .home-card-section{
+        display: none;
+    }
+    .home{
+        background: url(images/logoCard.png) no-repeat center center;
+        background-size: cover;
+    }
+}
 
 
 
@@ -243,7 +125,7 @@ header{
     width: 20%;
     margin: auto;
     font-weight: 500;
-
+    line-height: 36px;
 }
 .hours-section{
     margin: auto;
@@ -272,11 +154,32 @@ header{
     padding-left: 5px;
     min-width: 125px;
 }
-@media screen and (max-width: 1250px){
+@media screen and (max-height: 675px){
+
+    .locationHoursPhone{
+        height: 40vh;
+    }
+}
+@media screen and (min-height: 1100px){
+    
+    .locationHoursPhone{
+        height: 15vh;
+    }
+    .phoneNumber{
+        transform: translateY(-10%);
+    }
+
+
+}
+@media screen and (min-width: 1000px){
+    .location{
+        padding-right: 20px;
+    }
+}
+@media screen and (max-width: 1255px){
     .location{
         width: 100%;
         position: relative;
-        transform:translateY(-50%);
     }
     .hours-section table{
         font-size: 16px;
@@ -303,7 +206,6 @@ header{
         vertical-align: top;
         min-width: 200px;
         position: relative;
-        transform:translateY(-50%);
     }
 }
 @media screen and (max-width: 780px){
@@ -320,7 +222,6 @@ header{
     .location{
         padding: 15px;
         height: 10vh;
-        transform: translateY(-5%);
         line-height: 30px;
     }
     .phoneNumber{
@@ -371,6 +272,11 @@ header{
     padding-bottom: 75px;
 }
 
+@media screen and (min-height: 1100px){
+    .aboutUs{
+        min-height: 30vh;
+    }
+}
 @media screen and (max-width: 650px){
     .aboutUsText, .aboutUsTitle{
         width: 70%;
@@ -420,12 +326,20 @@ header{
         max-height: 300px;
     }
 }
+@media screen and (min-height: 1100px){
+    .gallerySection{
+        min-height: 50vh;
+    }
+}
 @media screen and (max-width: 780px){
     .gallerySection{
         min-height: 70vh;
     }
     .imageGallery{
         max-height: 200px;
+    }
+    .topGallery, .bottomGallery{
+        max-width: 80%;
     }
 }
 @media screen and (max-width: 600px){
@@ -434,15 +348,18 @@ header{
     }
     .imageGallery{
         object-fit: cover;
-        position: relative;
         max-height: 300px;
-
     }
     .img2{
         object-position: 50% 25%;
     }
     .img4{
         object-position: 50% 40%;
+    }
+}
+@media screen and (max-width: 420px){
+    .topGallery, .bottomGallery{
+        min-width: 100%;
     }
 }
 
@@ -500,7 +417,6 @@ header{
     .coachJimmyImg{
         margin: auto;
         max-height: 250px;
-        /* width: 250px; */
     }
     .aboutCoach{
         flex-direction: column;
@@ -509,213 +425,11 @@ header{
         margin-top: 50px;
     }
 }
+@media screen and (max-width: 320px){
+    .coachJimmyImg{
+        margin-bottom: 25px;
+        max-height: 200px;
 
-.footerSection{
-    min-height: 35vh;
-    display: flex;
-    background-color: #0E0F15;
-    font-family: 'Oswald', sans-serif;
-}
-.footerHours{
-    flex: 1;
-    margin: auto;
-    text-align: center;
-}
-.footerTable td {
-    padding: 5px 30px;
-    min-width: 100px;
-}
-.footerTable .dateDays{
-    color: #dddddd;
-    text-align: left;
-    width: 50%;
-}
-.footerTable .dateHours{
-    color: #aaaaaa;
-    text-align: right;
-    width: 50%;
-}
-.hours{
-    color: #ffffff;
-    font-size: 36px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-decoration: underline;
-    margin-bottom: 10px;
-}
-.footerTable{
-    margin: auto;
-    font-size: 18px;
-}
-.mobileLine{
-    display: none;
-}
-.footerTable2{
-    display: none;
-}
-.footerLogo{
-    flex: 1;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-}
-#footerLogoCard{
-    max-height: 240px;
-    margin: auto;
-}
-.footerInfo{
-    flex: 1;
-    margin: auto;
-}
-.footerLine{
-    width: 10%;
-    margin: 10px 0;
-}
-.footerLocation, .footerPhone, .footerSocialMedia{
-    margin: 15px 0;
-    display: flex;
-    flex-direction: column;
-}
-.locationText, .phoneText, .socialMediaText{
-    padding-right: 10px;
-    color: #bbbbbb;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 32px;
-    vertical-align: middle;
-}
-.locationDesc, .phoneDesc{
-    color: #eeeeee;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 32px;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
-}
-.footerSocialMedia{
-    text-decoration: none;
-}
-.fa-facebook-square{
-    color: #3B5998;
-    line-height: 32px;
-    vertical-align: middle;
-    font-size: 24px;
-}
-@media screen and (max-width: 1000px){
-    .footerInfo{
-        padding: 0 20px;
-    }
-    .footerHours .dateHours{
-        width: 100%;
-    }
-}
-@media screen and (max-width: 855px){
-    .footerHours, .footerInfo{
-        flex: 2;
-    }
-    #footerLogoCard{
-        max-width: 200px;
-        margin: auto;
-    }
-    .footerTable{
-        display: none;
-    }
-    .footerTable2{
-        display: block;
-        font-size: 18px;
-    }
-
-    .footerTable2 td {
-        padding: 5px 30px;
-    }
-    .footerTable2 .dateDays{
-        color: #dddddd;
-        text-align: left;
-        min-width: 150px;
-
-        /* width: 50%; */
-    }
-    .footerTable2 .dateHours{
-        color: #aaaaaa;
-        text-align: right;
-        padding: 5px 10px;
-        min-width: 100px;
-        /* width: 50%; */
-    }
-    .locationDesc, .phoneDesc{
-        font-size: 16px;
-    }
-    .locationText, .phoneText, .socialMediaText{
-        font-size: 14px;
-    }
-}
-@media screen and (max-width: 700px){
-    .footerLogo{
-        display: none;
-    }
-    .locationDesc, .phoneDesc{
-        font-size: 18px;
-    }
-    .locationText, .phoneText, .socialMediaText{
-        font-size: 16px;
-    }
-}
-@media screen and (max-width: 550px){
-    .footerSection{
-        flex-direction: column;
-
-    }
-    .footerHours{
-        display: block;
-        min-width: 70%;
-    }
-    .mobileLine{
-        display: block;
-        width: 10%;
-        margin: 10px 0;
-    }
-    .footerTable2{
-        padding: 0 20px;
-    }
-    .hours, .mobileLine{
-        margin: 0 20px;
-    }
-    .footerTable2 td {
-        padding: 0;
-        width: 100%;
-        text-align: left;
-    }
-    .hours{
-        color: #bbbbbb;
-        font-size: 16px;
-        padding: 0;
-        text-decoration: none;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-    .hours::after{
-        content: ':';
-    }
-    .footerTable2 .dateDays{
-        padding: 0;
-        margin: 0;
     }
 }
 
-
-
-.copyrightSection{
-    height: 7.5vh;
-    display: grid;
-    background-color: #0A0B11;
-}
-.losGallosBravosCopyright{
-    display: block;
-    margin: auto;
-    color: rgba(255, 255, 255, .6);
-    font-size: 16px;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    text-align: center;
-}

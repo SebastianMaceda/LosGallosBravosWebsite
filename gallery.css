@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.galleryHero{
+    height: 95vh;
+    font-family: 'Lato', sans-serif;
+    background: url(images/boxing-gym-ring.jpg) no-repeat center center;
+}
+.galleryHeroOverlay{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(00, 00, 00, .9);
+    justify-content: center;
+    align-items: center;
+}
+.galleryInfo{
+    flex: 2;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    /* transform: translateY(-10%); */
+}
+.galleryTitle, .galleryDescription{
+    width: 35%;
+    text-align: center;
+
+}
+.galleryTitle{
+    font-size: 38px;
+    width: 75%;
+    color: #dddddd;
+    margin-bottom: 15px;
+    text-decoration: underline;
+    text-decoration-color: #999999;
+}
+.galleryDescription{
+    width: 65%;
+    color: #aaaaaa;
+    font-size: 24px;
+}
+.contactUsBtn{
+    background-color: #c51010;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 24px;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 50px;
+    border-radius: 15px;
+    border: 1px solid #ffffff;
+}
+.contactUsBtn:hover{
+    background-color: #ff4444;
+}
+.home-card-section{
+    flex: 1;
+}
+.logoCard{
+    margin: auto;
+    max-height: 420px;
+}
+@media screen and (min-height: 1100px){
+    .galleryHero{
+        max-height: 70vh;
+    }
+}
+@media screen and (max-width: 1100px){
+    .galleryInfo{
+        flex: 2;
+    }
+    .galleryTitle{
+        width: 100%;
+    }
+    .galleryDescription{
+        width: 95%;
+    }
+
+    .logoCard{
+        max-height: 320px;
+    }
+}
+@media screen and (max-width: 780px){
+    .galleryHero{
+        background-size: cover;
+    }
+}
+
+.gallerySection{
+    background-color: #0b0b0e;
+    padding: 25px 0 100px 0;
+}
+.galleryImagesTitle{
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+    text-align: center;
+    font-size: 36px;
+    color: #dddddd;
+    padding: 25px 0 50px 0;
+    text-decoration: underline #aaaaaa;
+}
+
+
+.galleryImages{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    overflow: hidden;
+}
+.galleryImage{
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    position: relative;
+    height: 350px;
+}
+.galleryImage1, .galleryImage2, .galleryImage3, .galleryImage4, 
+.galleryImage5, .galleryImage6, .galleryImage7, .galleryImage8{
+    width: 100%;
+}
+.galleryImage9{
+    display: none;
+}
+@media screen and (max-width: 1050px){
+    .galleryImages{
+        grid-template-columns: auto auto auto;
+    }
+    .galleryImage9{
+        display: block;
+    }
+}
+@media screen and (max-width: 780px){
+    .galleryImages{
+        grid-template-columns: auto auto;
+    }
+    .galleryImage9{
+        display: none;
+    }
+}
+@media screen and (max-width: 500px){
+    .galleryImages{
+        grid-template-columns: auto;
+    }
+    .galleryImage4{
+        object-position: 50% 25%;
+    }
+}
