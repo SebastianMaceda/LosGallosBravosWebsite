@@ -213,12 +213,7 @@ header{
         max-height: 320px;
     }
 }
-@media screen and (max-width: 780px){
 
-}
-@media screen and (max-width: 425px){
-
-}
 
 
 
@@ -376,7 +371,12 @@ header{
     padding-bottom: 75px;
 }
 
-/* * Doesn't need media queries */
+@media screen and (max-width: 650px){
+    .aboutUsText, .aboutUsTitle{
+        width: 70%;
+    }
+}
+
 
 
 
