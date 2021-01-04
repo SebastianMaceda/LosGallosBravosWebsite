@@ -30,13 +30,49 @@
     font-family: 'Lato', sans-serif;
 }
 .aboutDescription{
+    margin-top: 20px;
     font-size: 24px;
+
+
     color: #aaaaaa;
+    font-family: 'Lato', sans-serif;
+}
+.contactUsBtn{
+    margin-top: 50px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(173, 10, 10);
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+}
+.contactUsBtn:hover{
+    background-color:  rgb(99, 13, 13);
 }
 
 
 @media screen and (max-width: 360px){
     body{
         padding-bottom: 100px;
+    }
+}
+
+.gymInfoSection{
+    background-color: #0E0F15;
+    font-family: 'Oswaldo', sans-serif;
+    display: flex;
+    text-align: center;
+    color: #dddddd;
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 780px){
+    .gymInfoSection{
+        flex-direction: column;
+        padding: 0 10%;
     }
 }
