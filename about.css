@@ -158,6 +158,75 @@
         width: 90%;
     }
 }
+.aboutWorkoutSection{
+    background-color: #0b0b0e;
+    max-width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+    padding: 75px 0;
+}
+.aboutWorkoutTitle{
+    /* flex: 1; */
+    color: #eeeeee;
+    text-decoration: underline #8d8d8d;
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin: auto;
+    width: 100%;
+}
+.workoutRoutine{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.workoutIcon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: linear-gradient(135deg, #b3b3b3, #4d4d4d) ;
+    padding: auto;
+    border-radius: 50%;
+    margin: 50px auto;
+}
+.workoutIconImg{
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 25px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+}
+.workoutType{
+    font-size: 26px;
+    text-align: center;
+    color: #bfbfbf;
+    padding: 0 0 10px;
+}
+.workoutTypeDescription{
+    font-size: 18px;
+    text-align: center;
+    color: #a6a6a6;
+}
+@media screen and (max-width: 480px){
+    .workoutIcon{
+        width: 160px;
+        height: 160px;
+    }
+    .workoutIconImg{
+        max-width: 150px;
+    }
+}
+
+
+
+
+
 
 .coachAboutSection{
     max-width: 100%;
@@ -195,18 +264,29 @@
     text-align: center;
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1200px){
     .coachAboutSection{
-        padding: 75px 20%;
-            margin: auto;
+        padding: 75px 25%;
+        margin: auto;
     }
     .coachJimmyImg{
         max-width: 300px;
     }
-    .coachBio > *{
-        margin-left: 0;
-        padding-left: 0;
+    .coachBioText{
+        width: 90%;
+        margin: auto;
+        margin-top: 0;
     }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+    .coachAboutSection{
+        padding: 75px 15%;
+        margin: auto;
+    }
+    .coachJimmyImg{
+        max-width: 300px;
+    }
+
     .coachBioText{
         width: 90%;
         margin: auto;
@@ -258,7 +338,7 @@
 }
 @media screen and (max-width: 480px){
     .coachJimmyImg{
-        max-width: 320px;
+        max-width: 95%
     }
     .coachAboutSection{
         flex-direction: column;
