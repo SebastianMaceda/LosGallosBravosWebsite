@@ -6,7 +6,7 @@
 .aboutHero{
     background: url(images/logoCard2.png) no-repeat center center;
     background-size: cover;
-    object-fit: cover;
+    object-fit:cover;
     height: 95vh;
 }
 .aboutHeroOverlay{
@@ -202,7 +202,6 @@
     align-items: center;
     margin: auto;
     background: linear-gradient(135deg, #b3b3b3, #4d4d4d) ;
-    padding: auto;
     border-radius: 50%;
     margin: 50px auto;
 }
@@ -232,7 +231,7 @@
     height: 160px;
 }
 .workoutIconImg{
-    max-width: 150px;
+    width: 150px;
 }
 @media screen and (min-width: 1201px){
     .workoutRoutineContainer{
