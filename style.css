@@ -103,144 +103,69 @@
 
 
 
-.locationHoursPhone{
+.gymInfoSection{
     background-color: #0E0F15;
-    height: 20vh;
-    display: flex;
-    color: #dddddd;
     font-family: 'Oswald', sans-serif;
-    padding: 0 15%;
+    display: flex;
     text-align: center;
-    font-weight: 500;
-
+    color: #dddddd;
+    font-size: 18px;
+    padding: 30px 0;
 }
-.location, .hours-section, .phoneNumber{
+.locationInfo, .hoursInfo > *, .numberInfo{
+    font-weight: 500;
+}
+.locationInfo, .hoursInfo, .numberInfo{
     flex: 1;
-}
-.location, .phoneNumber{
-    line-height: 7.5vh;
-    vertical-align: middle;
-}
-.location{
-    width: 20%;
     margin: auto;
-    font-weight: 500;
-    line-height: 36px;
+    padding: 20px 0;
 }
-.hours-section{
-    margin: auto;
-    height: 10vh;
-    border-right: 1px solid white;
-    border-left: 1px solid white;
+.hoursInfo{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px 20px;
+    padding: 20px 0;
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
-.hours-section table{
-    text-align: center;
-    margin: auto;
+.hoursInfoDate, .dayHours{
+    width: 150px;
 }
-.hours-section table td {
-    padding: 5px 20px;
-    font-size: 24px;
-}
-.dateDays{
+.hoursInfoDate{
+    text-align: left;
     color: #eeeeee;
 }
-.dateHours{
+.dayHours{
+    text-align: right;
     color: #aaaaaa;
 }
-.phoneNumber{
-    margin: auto;
-    font-weight: 500;
-    line-height: 7.5vh;
-    padding-left: 5px;
-    min-width: 125px;
-}
-@media screen and (max-height: 675px){
 
-    .locationHoursPhone{
-        height: 40vh;
+@media screen and (min-width: 780px){
+    .hoursInfoDate, .dayHours{
+        margin: auto;
+    }
+    .hoursInfo{
+        border: none;
+        border-right: 2px solid #fff;
+        border-left: 2px solid #fff;
+        margin: auto;
+    }
+    .locationInfo, .hoursInfo, .numberInfo{
+        padding: 0 10px;
     }
 }
-@media screen and (min-height: 1100px){
-    
-    .locationHoursPhone{
-        height: 15vh;
-    }
-    .phoneNumber{
-        transform: translateY(-10%);
-    }
-
-
-}
-@media screen and (min-width: 1000px){
-    .location{
-        padding-right: 20px;
-    }
-}
-@media screen and (max-width: 1255px){
-    .location{
-        width: 100%;
-        position: relative;
-    }
-    .hours-section table{
-        font-size: 16px;
-
-    }
-    .hours-section table td{
-        padding: 5px 5px;
-    }
-    .location, .phoneNumber{
-        height: 7.5vh;
-    }
-
-}
-@media screen and (max-width: 1000px){
-    .hours-section{
-        flex: 2;
-    }
-    .location, .hours-section table td, .phoneNumber{
-        font-size: 20px;
-    }
-    .location{
-        padding-right: 15px;
-        line-height: auto;
-        vertical-align: top;
-        min-width: 200px;
-        position: relative;
-    }
-}
-@media screen and (max-width: 780px){
-    .locationHoursPhone{
+@media screen and (max-width: 779px){
+    .gymInfoSection{
         flex-direction: column;
-        min-height: 30vh;
-    }
-    .hours-section{
-        border: none;
-    }
-    .location, .hours-section{
-        border-bottom: 1px solid;
-    }
-    .location{
-        padding: 15px;
-        height: 10vh;
-        line-height: 30px;
-    }
-    .phoneNumber{
-        border: none;
-    }
-    .hours-section{
-        width: 100%;
+        min-height: 25vh;
     }
 }
-@media screen and (max-width: 465px){
-    .locationHoursPhone{
-        min-height: 30vh;
+@media screen and (max-width: 319px){
+    .hoursInfo{
+        grid-template-columns: auto;
     }
-    .location{
-        border-bottom: none;
-        margin-bottom: 10px;
-    }
-    .hours-section{
-        border-top: 1px solid white;
+    .dayHours, .hoursInfoDate{
+        text-align: center;
     }
 }
 
