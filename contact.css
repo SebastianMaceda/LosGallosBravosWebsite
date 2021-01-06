@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.contactHero{
+    background: url(images/logoCard2.png) no-repeat center center;
+    background-size: cover;
+    object-fit:cover;
+    height: 60vh;
+}
+.contactHeroOverlay{
+    height: 100%;
+    width: 100%;
+    display: block;
+    background-color: rgba(0, 0, 0, .8);
+}
+.contactInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.contactTitle{
+    font-size: 44px;
+    color: #dddddd;
+    text-decoration: underline #aaaaaa;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+.contactDescription{
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+
+    color: #aaaaaa;
+    font-family: 'Lato', sans-serif;
+}
+.contactUsBtn{
+    margin-top: 50px;
+    text-decoration: none;
+    color: #eeeeee;
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(173, 10, 10);
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+    font-size: 22px;
+    border-radius: 10px;
+    text-align: center;
+}
+.contactUsBtn:hover{
+    background-color:  rgb(99, 13, 13);
+}
+
+
+.contactFormSection{
+    min-height: 70vh;
+    background-color: #0b0b0e;
+}
+.contactFormTitle{
+    color: #eeeeee;
+    font-size: 42px ;
+    text-decoration: underline #8d8d8d;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 50px 0 20px 0;
+}
+.contactForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contactForm > *{
+    width: 80%;
+    margin: auto;
+    height: 30px;
+}
+.contactForm label {
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    margin: 10px auto 5px;
+    color: #eeeeee77;
+}
+.contactFormInput{
+    background-color: #eeeeee;
+    border: none;
+    /* text-align: center; */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+.messageInput{
+    height: 90px;
+    padding-top: 5px;
+}
+.submitBtn{
+    margin: 20px auto auto;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 10px 0;
+    height: 3rem;
+    color: #0b0b0e;
+    border: none;
+    background-color: #747171;
+}
+.submitBtn:hover{
+    border: 3px solid white;
+    background-color: #b3a9a9;
+}

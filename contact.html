@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Gallos Bravos Boxing Gym | Home</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" href="images/boxing.svg">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&family=Lato&family=Montserrat&family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/b344fdaf2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h2 class="logo"><a class="logoLink" href="index.html">Los Gallos Bravos Boxing Gym</a></h2>
+        
+        <label for="btn" class="icon">
+            <span class="fa fa-bars hamburgerMenu"></span>
+        </label>
+        <input type="checkbox" id="btn">
+        
+        <ul class="navbar">
+            <li class="nav-list"><a href="index.html" class="nav-link">Home</a></li>
+            <li class="nav-list"><a href="gallery.html" class="nav-link">Gallery</a></li>
+            <li class="nav-list"><a href="about.html" class="nav-link">About</a></li>
+            <li class="nav-list"><a href="contact.html" class="nav-link currentLink">Contact</a></li>
+        </ul>
+    </header>
+    <main>
+        <section class="contactHero">
+            <div class="contactHeroOverlay">
+                <div class="contactInfo">
+                    <h2 class="contactTitle">Get in Contact with Us</h2>
+                    <h2 class="contactDescription">Learn More About Our Gym</h2>
+                    <a href="" class="contactUsBtn">Contact Us</a>
+
+                </div>
+            </div>
+        </section>
+        <section class="contactFormSection">
+            <h2 class="contactFormTitle">Contact</h2>
+            <form action="" class="contactForm">
+                <label for="fname">Name:</label>
+                <input class="contactFormInput" type="text" id="fname" placeholder="Enter Your Name...">
+                <label for="emailBox">Email:</label>
+                <input class="contactFormInput" type="text" id="emailBox" placeholder="Enter Your Email...">
+                <label for="subject">Message: </label>
+                <textarea class="contactFormInput messageInput" name="subject" id="subject" placeholder="Enter Your Message..."></textarea>
+                <input type="submit" class="submitBtn" value="Submit">
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footerSection">
+            <div class="footerHours">
+                    <h2 class="hours">Hours</h2>
+                    <table class="footerTable">
+                        <tr>
+                            <td class="dateDays">Monday</td>
+                            <td class="dateHours">5pm - 7pm</td>
+                        </tr>
+                        <tr>
+                            <td class="dateDays">Tuesday</td>
+                            <td class="dateHours">5pm - 7pm</td>
+                        </tr>
+                        <tr>
+                            <td class="dateDays">Wednesday</td>
+                            <td class="dateHours">5pm - 7pm</td>
+                        </tr>
+                        <tr>
+                            <td class="dateDays">Thursday</td>
+                            <td class="dateHours">5pm - 7pm</td>
+                        </tr>
+                        <tr>
+                            <td class="dateDays">Friday - Sunday</td>
+                            <td class="dateHours">Closed</td>
+                        </tr>
+                    </table>
+                    <table class="footerTable2">
+                        <tr class="tableOpen">
+                            <td class="dateDays">Mon - Thurs</td>
+                            <td class="dateHours">5pm - 7pm</td>
+                        </tr>
+                        <tr class="tableClosed">
+                            <td class="dateDays">Fri - Sun</td>
+                            <td class="dateHours">Closed</td>
+                        </tr>
+                    </table>
+                    <hr class="mobileLine">
+            </div>
+            <div class="footerLogo">
+                <img src="images/logoCard.png" alt="" class="logoCard" id="footerLogoCard">
+            </div>
+            <div class="footerInfo">
+                <div class="footerLocation">
+                    <h2 class="locationText">Location:</h2>
+                    <h2 class="locationDesc">6561 University Ave, Windsor Heights, IA 50324</h2>
+                </div>
+                <hr class="footerLine">
+                <div class="footerPhone">
+                    <h2 class="phoneText">Phone:</h2>
+                    <h2 class="phoneDesc">(515) 494-2703</h2>
+                </div>
+                <hr class="footerLine">
+                <a class="footerSocialMedia" href="https://www.facebook.com/GallosBravos515/" target="_blank">
+                    <h2 class="socialMediaText">Check us out on: </h2>
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+            </div>
+        </section>
+        <section class="copyrightSection">
+            <h2 class="losGallosBravosCopyright"></h2>
+        </section>
+    </footer>
+    
+    
+        <script src="main.js" defer></script>
+
+</body>
+</html>
