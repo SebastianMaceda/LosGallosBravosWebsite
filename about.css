@@ -113,6 +113,14 @@
         min-height: 25vh;
     }
 }
+@media screen and (max-width: 319px){
+    .hoursInfo{
+        grid-template-columns: auto;
+    }
+    .dayHours, .hoursInfoDate{
+        text-align: center;
+    }
+}
 .aboutUsSection{
     font-family: 'Oswald', sans-serif;
     text-align: center;
@@ -165,7 +173,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Oswald', sans-serif;
-    padding: 75px 0;
+    padding: 75px 0 150px;
 }
 .aboutWorkoutTitle{
     /* flex: 1; */
@@ -180,9 +188,13 @@
     width: 100%;
 }
 .workoutRoutine{
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto;
     margin: auto;
+}
+.workoutRoutineContainer{
+    display: grid;
+    grid-template-columns: auto;
 }
 .workoutIcon{
     display: flex;
@@ -212,6 +224,35 @@
     font-size: 18px;
     text-align: center;
     color: #a6a6a6;
+    max-width: 280px;
+    margin: auto;
+}
+.workoutIcon{
+    width: 160px;
+    height: 160px;
+}
+.workoutIconImg{
+    max-width: 150px;
+}
+@media screen and (min-width: 1201px){
+    .workoutRoutineContainer{
+        grid-template-columns: auto auto auto auto;
+        width: 80%;
+        margin: auto;
+    }
+    .aboutWorkoutSection{
+        padding: auto 15%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .workoutRoutineContainer{
+        grid-template-columns: auto auto auto;
+    }
+}
+@media screen and (max-width: 780px){
+    .workoutRoutineContainer{
+        grid-template-columns: auto auto;
+    }
 }
 @media screen and (max-width: 480px){
     .workoutIcon{
@@ -353,10 +394,4 @@
         margin: auto;
         text-align: center;
     }
-}
-
-
-
-body{
-    padding-bottom: 500px;
 }
