@@ -77,7 +77,12 @@ header{
     }
 
     header{
-        min-height: 1%;
+        min-height: 10%;
+    }
+    .logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     
 }
@@ -92,15 +97,12 @@ header{
 
 }
 @media screen and (max-height: 360px){
-    .hamburgerMenu{
+    /* .hamburgerMenu{
         padding: 0;
         height: 100%;
         margin: 0;
         transform: translateY(-15%);
-    }
-    .navbar{
-        transform: translateY(-5%);
-    }
+    } */
     .nav-list{
         padding: 15px 0;
     }
@@ -119,22 +121,33 @@ header{
     .logoLink{
         font-size: 16px;
     }
-    .hamburgerMenu{
-        font-size: 16px;
+    .fa-bars{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: auto;
+    }
+    .fa-bars:before{
+        margin: auto;
+        font-size: 20px;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+        align-content: center;
     }
 }
 @media screen and (max-width: 310px){
     .navbar{
         max-width: 100%;
     }
-    .hamburgerMenu{
+    /* .hamburgerMenu{
         font-size: 24px;
         margin: auto;
         display: flex;
         align-items: center;
         justify-content: center;
-    }
+    } */
 }
 @media screen and (max-width: 1000px){
     .logo{
@@ -181,6 +194,9 @@ header{
     }
     .icon{
         text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     #btn:checked + .navbar{
         display: flex;
@@ -388,6 +404,34 @@ header{
     .footerTable2 .dateDays{
         padding: 0;
         margin: 0;
+    }
+}
+@media screen and (max-width: 330px){
+    .tableOpen, .tableClosed{
+        display: flex;
+        flex-direction: column;
+    }
+    .footerTable2 td{
+        text-align: center;
+        width: 100%;
+    }
+    .footerTable2{
+        min-width: 100%;
+    }
+    .footerTable2 .dateDays{
+        color: #dddddd;
+        text-align: center;
+        width: 100%;
+        display: block;
+        /* width: 50%; */
+    }
+    .footerTable2 .dateHours{
+        display: block;
+        color: #aaaaaa;
+        text-align: center;
+        /* padding: 5px 10px; */
+        width: 100%;
+        /* width: 50%; */
     }
 }
 
