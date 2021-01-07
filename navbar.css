@@ -53,14 +53,15 @@ header{
 .hamburgerMenu{
     display: none;
     text-align: right;
-    margin: auto;
+    margin: 0;
     font-size: 32px;
     flex: 2;
 }
 .hamburgerMenu::before{
     display: none;
-    margin: auto;
+    margin: 0;
     text-align: center;
+    color: rgb(133, 125, 125);
 }
 #btn{
     display: none;
