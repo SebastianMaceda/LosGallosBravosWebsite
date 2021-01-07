@@ -68,7 +68,6 @@ header{
 @media screen and (max-height: 700px){
     .fa-bars, .hamburgerMenu{
         padding: 0;
-        background-color: orange;
         margin: 0;
         max-height: 100%;
         display: none;
