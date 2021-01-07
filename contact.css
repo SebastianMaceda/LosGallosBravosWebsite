@@ -58,6 +58,7 @@
 .contactFormSection{
     min-height: 70vh;
     background-color: #0b0b0e;
+    padding: 25px 0 75px 0;
 }
 .contactFormTitle{
     color: #eeeeee;
@@ -73,7 +74,6 @@
     flex-direction: column;
 }
 .contactForm > *{
-    width: 80%;
     margin: auto;
     height: 30px;
 }
@@ -109,4 +109,19 @@
 .submitBtn:hover{
     border: 3px solid white;
     background-color: #b3a9a9;
+}
+@media screen and (max-width: 550px){
+    .contactForm > *{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 780px){
+    .contactForm > *{
+        width: 70%;
+    }
+}
+@media screen and (min-width: 780px){
+    .contactForm > *{
+        width: 450px;
+    }
 }

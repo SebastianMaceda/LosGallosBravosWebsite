@@ -192,6 +192,7 @@ header{
     flex: 1;
     margin: auto;
     text-align: center;
+    margin-top: 40px;
 }
 .footerTable td {
     padding: 5px 30px;

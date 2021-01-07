@@ -358,3 +358,43 @@
     }
 }
 
+.reviewSection{
+    background-color: #0b0b0e;
+    font-family: 'Lato', sans-serif;
+    padding: 50px 0;
+    display: grid;
+}
+.reviewCard{
+    background-color: #d1d1d1;
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: #b1b1b1 3px solid;
+    max-width: 400px;
+}
+.reviewStars{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reviewStars .fa-star{
+    font-size: 24px;
+    color: #d39d09;
+}
+.reviewDateLocation{
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    padding: 5px 0;
+}
+.reviewDescription{
+    font-size: 18px;
+    text-align: left;
+}
+@media screen and (max-width: 450px){
+    .reviewSection{
+        grid-template-columns: auto;
+        padding: 50px 5px;
+    }
+}
