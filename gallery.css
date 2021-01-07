@@ -121,13 +121,16 @@
     position: relative;
     height: 350px;
 }
-.galleryImage1, .galleryImage2, .galleryImage3, .galleryImage4, 
-.galleryImage5, .galleryImage6, .galleryImage7, .galleryImage8,
-.galleryImage9, .galleryImage10, .galleryImage11, .galleryImage12{
+.galleryImage3, .galleryImage4, .galleryImage5, .galleryImage6, .galleryImage7,
+.galleryImage8, .galleryImage9, .galleryImage10, .galleryImage11, .galleryImage12,
+.galleryImage13, .galleryImage14{
     width: 100%;
 }
-.galleryImage9{
+.galleryImage1{
     display: none;
+}
+.galleryImage4{
+    object-position: 50% 25%;
 }
 @media screen and (max-width: 1050px){
     .galleryImages{
@@ -136,12 +139,15 @@
     .galleryImage9{
         display: block;
     }
+    .galleryImage4, .galleryImage8, .galleryImage11{
+        display: none;
+    }
 }
 @media screen and (max-width: 780px){
     .galleryImages{
         grid-template-columns: auto auto;
     }
-    .galleryImage9{
+    .galleryImage12, .galleryImage3, .galleryImage6{
         display: none;
     }
 }
@@ -151,5 +157,8 @@
     }
     .galleryImage4{
         object-position: 50% 25%;
+    }
+    .galleryImage7{
+        display: none;
     }
 }

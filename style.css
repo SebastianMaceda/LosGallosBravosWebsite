@@ -241,7 +241,8 @@
     height: 350px;
 }
 .galleryImage3, .galleryImage4, .galleryImage5, .galleryImage6, .galleryImage7,
-.galleryImage8, .galleryImage9, .galleryImage10, .galleryImage11, .galleryImage12{
+.galleryImage8, .galleryImage9, .galleryImage10, .galleryImage11, .galleryImage12,
+.galleryImage13, .galleryImage14{
     width: 100%;
 }
 .galleryImage1{
@@ -257,10 +258,16 @@
     .galleryImage9{
         display: block;
     }
+    .galleryImage5, .galleryImage9, .galleryImage12{
+        display: none;
+    }
 }
 @media screen and (max-width: 780px){
     .galleryImages{
         grid-template-columns: auto auto;
+    }
+    .galleryImage13, .galleryImage4, .galleryImage7{
+        display: none;
     }
 }
 @media screen and (max-width: 500px){
@@ -269,6 +276,9 @@
     }
     .galleryImage4{
         object-position: 50% 25%;
+    }
+    .galleryImage8{
+        display: none;
     }
 }
 
