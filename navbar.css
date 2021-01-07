@@ -56,17 +56,28 @@ header{
     margin: 0;
     font-size: 32px;
     flex: 2;
-}
-.hamburgerMenu::before{
-    display: none;
-    margin: 0;
-    text-align: center;
     color: rgb(133, 125, 125);
 }
 #btn{
     display: none;
     background-color: pink;
     padding: 100px;
+}
+
+
+@media screen and (max-height: 700px){
+    .fa-bars, .hamburgerMenu{
+        padding: 0;
+        background-color: orange;
+        margin: 0;
+        max-height: 100%;
+        display: none;
+    }
+
+    header{
+        min-height: 1%;
+    }
+    
 }
 @media screen and (max-height: 450px){
     header{
@@ -76,9 +87,7 @@ header{
     .logo{
         padding-top: 15px;
     }
-    .hamburgerMenu::before, .hamburgerMenu{
-        padding: 0;
-    }
+
 }
 @media screen and (max-height: 360px){
     .hamburgerMenu{
@@ -96,11 +105,6 @@ header{
 }
 @media screen and (max-width: 450px){
     .logoLink{
-        font-size: 24px;
-    }
-    .hamburgerMenu::before{
-        padding: 0;
-        padding-top: 5px;
         font-size: 24px;
     }
 }
@@ -122,8 +126,12 @@ header{
     .navbar{
         max-width: 100%;
     }
-    .hamburgerMenu::before{
-        padding-bottom: 5px;
+    .hamburgerMenu{
+        font-size: 24px;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 1000px){
@@ -157,7 +165,7 @@ header{
         grid-area: c;
         margin-top: -10px;
     }
-    .hamburgerMenu::before, .hamburgerMenu{
+    .hamburgerMenu{
         display: block;
         position: relative;
         padding: 10px;
