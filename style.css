@@ -212,79 +212,63 @@
 
 
 .gallerySection{
-    min-height: 110vh;
     background-color: #0b0b0e;
-    max-width: 100%;
-    padding-bottom: 100px;
+    padding: 25px 0 100px 0;
 }
-.galleryTitle{
+.galleryImagesTitle{
+    font-family: 'Lato', sans-serif;
+    width: 100%;
     text-align: center;
-    font-family: 'Oswald', sans-serif;
-    color: #EEEEEE;
-    font-size: 42px;
-    text-decoration: underline;
-    text-decoration-color: #8D8D8D;
-    padding: 50px 0 50px;
+    font-size: 36px;
+    color: #dddddd;
+    padding: 25px 0 50px 0;
+    text-decoration: underline #aaaaaa;
 }
-.topGallery, .bottomGallery{
-    display: flex;
-    max-width: 70%;
-    margin: auto;
-    overflow: hidden;
-    justify-content: center;
-}
-.imageGallery{
-    max-height: 400px;
-    overflow: hidden;
-    object-fit: cover;
-    z-index: 5;
 
+
+.galleryImages{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    overflow: hidden;
 }
-.img1{
-    flex: 2;
+.galleryImage{
+    object-fit: cover;
+    display: block;
+    max-width: 100%;
+    position: relative;
+    height: 350px;
 }
-.img2, .img3, .img4, .img5{
-    flex: 1;
+.galleryImage3, .galleryImage4, .galleryImage5, .galleryImage6, .galleryImage7,
+.galleryImage8, .galleryImage9, .galleryImage10, .galleryImage11, .galleryImage12{
+    width: 100%;
+}
+.galleryImage1{
+    display: none;
+}
+.galleryImage4{
+    object-position: 50% 25%;
 }
 @media screen and (max-width: 1050px){
-    .imageGallery{
-        max-height: 300px;
+    .galleryImages{
+        grid-template-columns: auto auto auto;
     }
-}
-@media screen and (min-height: 1100px){
-    .gallerySection{
-        min-height: 50vh;
+    .galleryImage9{
+        display: block;
     }
 }
 @media screen and (max-width: 780px){
-    .gallerySection{
-        min-height: 70vh;
-    }
-    .imageGallery{
-        max-height: 200px;
-    }
-    .topGallery, .bottomGallery{
-        max-width: 80%;
+    .galleryImages{
+        grid-template-columns: auto auto;
     }
 }
-@media screen and (max-width: 600px){
-    .topGallery, .bottomGallery{
-        flex-direction: column;
+@media screen and (max-width: 500px){
+    .galleryImages{
+        grid-template-columns: auto;
     }
-    .imageGallery{
-        object-fit: cover;
-        max-height: 300px;
-    }
-    .img2{
+    .galleryImage4{
         object-position: 50% 25%;
-    }
-    .img4{
-        object-position: 50% 40%;
-    }
-}
-@media screen and (max-width: 420px){
-    .topGallery, .bottomGallery{
-        min-width: 100%;
     }
 }
 

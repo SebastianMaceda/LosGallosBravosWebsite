@@ -58,6 +58,9 @@ header{
     flex: 2;
     color: rgb(133, 125, 125);
 }
+.fa-bars::before{
+    display: none;
+}
 #btn{
     display: none;
     background-color: pink;
@@ -172,6 +175,9 @@ header{
         grid-area: b;
         text-align: right;
         padding-right: 25px;
+    }
+    .fa-bars::before{
+        display: block;
     }
     .icon{
         text-align: right;
