@@ -110,6 +110,11 @@
     border: 3px solid white;
     background-color: #b3a9a9;
 }
+#department , #department > *{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: #eeeeee;
+}
 @media screen and (max-width: 550px){
     .contactForm > *{
         width: 80%;

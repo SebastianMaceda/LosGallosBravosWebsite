@@ -45,13 +45,19 @@
 
                 <label for="emailBox">Email:</label>
                 <input name="_replyto" class="contactFormInput" type="text" id="emailBox" placeholder="Enter Your Email..." required>
-
-                <label for="subject">Subject: </label>
-                <input name="_subject" class="contactFormInput" type="text" id="subjectBox" placeholder="Subject..." required>
+                
+                
+                <label for="department">Subject:</label>
+                <select name="department" id="department" required="">
+                    <option value="Select" selected="" disabled="">Select</option>
+                    <option value="Get In Contact">Get In Contact</option>
+                    <option value="Schedule A Tour">Schedule A Tour</option>
+                </select>
 
                 <label for="messageBox">Message: </label>
                 <textarea name="message" class="contactFormInput messageInput" name="message" id="messageBox" placeholder="Enter Your Message..." required></textarea>
 
+                
                 <button type="submit" class="submitBtn" target="_blank">Submit</button>
             </form>
         </section>
