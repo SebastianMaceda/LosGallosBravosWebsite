@@ -406,7 +406,7 @@ header{
         margin: 0;
     }
 }
-@media screen and (max-width: 330px){
+@media screen and (max-width: 319px){
     .tableOpen, .tableClosed{
         display: flex;
         flex-direction: column;
@@ -429,9 +429,7 @@ header{
         display: block;
         color: #aaaaaa;
         text-align: center;
-        /* padding: 5px 10px; */
         width: 100%;
-        /* width: 50%; */
     }
 }
 
