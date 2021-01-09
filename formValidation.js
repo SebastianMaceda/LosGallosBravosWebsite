@@ -32,7 +32,7 @@ function formSubmit(e){
         formEmailBox.value = "";
         formSubjectBox.value = "";
         formMessageBox.value = "";
-        e.preventDefault()
+        console.log('Done');
     }
     
     
