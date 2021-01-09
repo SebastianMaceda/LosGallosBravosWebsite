@@ -27,10 +27,14 @@ function formSubmit(e){
         console.log('yeep 3');
         // alert("Please Enter Your Message");
 
+    }else{
+        formFname.value = "";
+        formEmailBox.value = "";
+        formSubjectBox.value = "";
+        formMessageBox.value = "";
+        e.preventDefault()
     }
-
     
     
     
-    console.log("hello there");
 }

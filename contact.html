@@ -39,20 +39,20 @@
         </section>
         <section class="contactFormSection">
             <h2 class="contactFormTitle">Contact</h2>
-            <form action="/" class="contactForm" method="GET">
+            <form action="/webForm.php" class="contactForm" method="POST">
                 <label for="fname">Name:</label>
-                <input class="contactFormInput" type="text" id="fname" placeholder="Enter Your Name..." required>
+                <input name="name" class="contactFormInput" type="text" id="fname" placeholder="Enter Your Name..." required>
 
                 <label for="emailBox">Email:</label>
-                <input class="contactFormInput" type="text" id="emailBox" placeholder="Enter Your Email..." required>
+                <input name="email" class="contactFormInput" type="text" id="emailBox" placeholder="Enter Your Email..." required>
 
                 <label for="subject">Subject: </label>
-                <input class="contactFormInput" type="text" id="subjectBox" placeholder="Subject..." required>
+                <input name="subject" class="contactFormInput" type="text" id="subjectBox" placeholder="Subject..." required>
 
                 <label for="messageBox">Message: </label>
-                <textarea class="contactFormInput messageInput" name="message" id="messageBox" placeholder="Enter Your Message..." required></textarea>
+                <textarea name="message" class="contactFormInput messageInput" name="message" id="messageBox" placeholder="Enter Your Message..." required></textarea>
 
-                <button type="submit" class="submitBtn">Submit</button>
+                <button type="submit" onsubmit="return false;" class="submitBtn">Submit</button>
         </section>
 
     </main>
