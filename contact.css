@@ -130,3 +130,25 @@
         width: 450px;
     }
 }
+.locationTitle{
+    font-size: 42px;
+    color: #1b1b1b;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #302E2E;
+    font-family: 'Oswald', sans-serif;
+    margin-bottom: 20px;
+}
+.googleMapsSection{
+    padding: 50px 0;
+    background-color: #e5e5e5;
+}
+.googleMapsLocation{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.googleMapsIframe{
+    min-height: 300px;
+    width: 95%;
+}

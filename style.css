@@ -283,72 +283,131 @@
 }
 
 
-.aboutCoach{
+
+.coachAboutSection{
+    max-width: 100%;
+    margin: auto;
     display: flex;
-    flex-direction: row;
-    padding: 5% 15%;
+    font-family: 'Oswald', sans-serif;
     background-color: #e5e5e5;
-    min-height: 50vh;
+    padding: 75px 0;
 }
 .coachJimmyImg{
-    max-width: 300px;
     flex: 1;
-    object-fit: cover;
-
+    margin: auto;
+    padding: auto;
 }
 .coachBio{
-    flex: 3;
+    flex: 1;
     display: flex;
     flex-direction: column;
-    margin: auto;
-    font-family: 'Oswald', sans-serif;
-    transform: translateY(-35%);
 }
-.coachJimmyTitle{
-    font-size: 42px;
-    color: #1b1b1b;
-    text-align: center;
+.coachBioTitle{
+    /* flex: 1; */
+    color: #1D1B1B;
     text-decoration: underline;
-    text-decoration-color: #302E2E;
-}
-.coachJimmyText{
-    font-size: 18px;
-    color: #2b2b2b;
-    width: 65%;
-    margin: auto;
+    font-size: 42px;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
+}
+.coachBioText{
+    /* flex: 1; */
+    padding-top: 10px;
+    font-size: 18px;
+    color: #494949;
+    text-align: center;
+}
 
-}
-@media screen and (max-width: 1000px){
-    .coachJimmyImg{
-        max-height: 300px;
-    }
-    .coachJimmyText{
-        width: 90%;
-    }
-}
-@media screen and (max-width: 780px){
-    .coachJimmyText{
-        margin-top: 10px;
-    }
-}
-@media screen and (max-width: 650px){
-    .coachJimmyImg{
+@media screen and (min-width: 1200px){
+    .coachAboutSection{
+        padding: 75px 25%;
         margin: auto;
-        max-height: 250px;
     }
-    .aboutCoach{
-        flex-direction: column;
+    .coachJimmyImg{
+        max-width: 300px;
+    }
+    .coachBioText{
+        width: 90%;
+        margin: auto;
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1200px){
+    .coachAboutSection{
+        padding: 75px 15%;
+        margin: auto;
+    }
+    .coachJimmyImg{
+        max-width: 300px;
+    }
+
+    .coachBioText{
+        width: 90%;
+        margin: auto;
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 780px) and (max-width: 1000px){
+    .coachAboutSection{
+        padding: 75px 10%;
+        margin: auto;
+    }
+    .coachJimmyImg{
+        max-width: 260px;
+    }
+    .coachBio > *{
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .coachBioText{
+        width: 70%;
+        margin: auto;
+        margin-top: 0;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 780px){
+    .coachBio{
+        /* position: relative; */
+        transform: translateY(-5%);
+    }
+    .coachJimmyImg{
+        max-width: 240px;
+    }
+}
+@media screen and (min-width: 480px) and (max-width: 600px){
+    .coachAboutSection{
+        padding: 75px 15px;
+    }
+    .coachJimmyImg{
+        max-width: 240px;
     }
     .coachBio{
-        margin-top: 50px;
+        margin: auto;
+        width: 60%;
+        transform: translateY(-10%);
+    }
+    .coachBioTitle, .coachBioText{
+        text-align: center;
     }
 }
-@media screen and (max-width: 320px){
+@media screen and (max-width: 480px){
     .coachJimmyImg{
-        margin-bottom: 25px;
-        max-height: 200px;
-
+        max-width: 95%
+    }
+    .coachAboutSection{
+        flex-direction: column;
+    }
+    .coachBioTitle{
+        width: 90%;
+        text-align: center;
+        margin: auto;
+    }
+    .coachBioText{
+        width: 90%;
+        margin: auto;
+        text-align: center;
     }
 }
 .reviewSection{
