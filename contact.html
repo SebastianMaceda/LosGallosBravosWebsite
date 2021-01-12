@@ -38,20 +38,15 @@
         </section>
         <section class="contactFormSection">
             <h2 class="contactFormTitle">Contact</h2>
-            <form class="contactForm" action="https://formspree.io/f/xwkwaqwd" method="POST">
+            <form class="contactForm" action="https://formspree.io/f/xeqpvvdo" method="POST">  
                 <label for="fname">Name:</label>
                 <input name="name" class="contactFormInput" type="text" id="fname" placeholder="Enter Your Name..." required>
 
                 <label for="emailBox">Email:</label>
                 <input name="_replyto" class="contactFormInput" type="text" id="emailBox" placeholder="Enter Your Email..." required>
                 
-                
-                <label for="department">Subject:</label>
-                <select name="department" id="department" required="">
-                    <option value="Select" selected="" disabled="">Select</option>
-                    <option value="Get In Contact">Get In Contact</option>
-                    <option value="Schedule A Tour">Schedule A Tour</option>
-                </select>
+                <label for="telephone">Telephone Number (Optional)</label>
+                <input type="telephone" class="contactFormInput" name="telephone" id="telephone" placeholder="(515) 123-4567">
 
                 <label for="messageBox">Message: </label>
                 <textarea name="message" class="contactFormInput messageInput" name="message" id="messageBox" placeholder="Enter Your Message..." required></textarea>
